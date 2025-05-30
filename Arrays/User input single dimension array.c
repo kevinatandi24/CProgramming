@@ -2,14 +2,19 @@
 int main()
 {
     int arr[5];
-    for(int i=0;i<=4;i++)
+    for(int i = 0; i < 5; i++)
     {
-        printf("Enter %d element\n",i+1);
-        scanf("%d",&arr[i]);
+        printf("Enter element %d\n", i + 1);
+        scanf("%d", &arr[i]);  // Fixed scanf
     }
-    printf("Element is given below\n");
-    for(int j=0;j<=4;j++)
+
+    printf("Elements are given below:\n");
+    for(int j = 0; j < 5; j++)
     {
-        printf("%d",arr[j]);
+        printf("%d ", arr[j]);  // Adds space between elements
     }
+
+    printf("\n");  // Add this to move to the next line after printing
+
+    return 0;
 }
